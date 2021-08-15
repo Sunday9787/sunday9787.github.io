@@ -36,7 +36,7 @@
 
   <!-- link -->
   
-    <link rel="shortcut icon" type='image/x-icon' href="http://static.sunday90.com/images/favicon-32x32.png">
+    <link rel="shortcut icon" type='image/x-icon' href="http://qiniu.daixiu8.cn/images/favicon-32x32.png">
   
 
   <!-- import link -->
@@ -77,7 +77,7 @@
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='http://static.sunday90.com/images/avatar@4x-100.jpg'/>
+            <img no-lazy class='logo' src='http://qiniu.daixiu8.cn/images/avatar@4x-100.jpg'/>
           
           
           
@@ -371,7 +371,7 @@
             
 <div class='new-meta-item author'>
   <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="http://static.sunday90.com/images/avatar.jpg">
+    <img no-lazy src="http://qiniu.daixiu8.cn/images/avatar.jpg">
     <p>sunday9787</p>
   </a>
 </div>
@@ -415,7 +415,7 @@
 
 
   
-  <h2 id="Vue-相关"><a href="#Vue-相关" class="headerlink" title="Vue 相关"></a>Vue 相关</h2><p><img src="http://static.sunday90.com/images/vue.png" class="lazyload" data-srcset="http://static.sunday90.com/images/vue.png" srcset="data:image/png;base64,666" alt="Vue"></p>
+  <h2 id="Vue-相关"><a href="#Vue-相关" class="headerlink" title="Vue 相关"></a>Vue 相关</h2><p><img src="http://qiniu.daixiu8.cn/images/vue.png" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/vue.png" srcset="data:image/png;base64,666" alt="Vue"></p>
 <h3 id="Vue实现数据双向绑定的原理：Object-defineProperty"><a href="#Vue实现数据双向绑定的原理：Object-defineProperty" class="headerlink" title="Vue实现数据双向绑定的原理：Object.defineProperty()"></a>Vue实现数据双向绑定的原理：Object.defineProperty()</h3><ul>
 <li><p>Vue实现数据双向绑定主要是：采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应监听回调。当把一个普通 Javascript 对象传给 Vue 实例来作为它的 data 选项时，Vue 将遍历它的属性，用 Object.defineProperty() 将它们转为 getter/setter。用户看不到 getter/setter，但是在内部它们让 Vue 追踪依赖，在属性被访问和修改时通知变化</p>
 </li>
@@ -489,7 +489,7 @@
 <h3 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h3><p>重新创建对象 切断 引用</p>
 <figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// @ts-expect-error</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcoyp</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">Record</span>&lt;<span class="title">string</span>, <span class="title">any</span>&gt;&gt;(<span class="params">origin: T, target?: T = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">const</span> k <span class="keyword">in</span> origin) &#123;</span><br><span class="line">    <span class="keyword">if</span> (origin.hasOwnProperty(k)) &#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> origin[k] === <span class="string">&#x27;object&#x27;</span> &amp;&amp; origin[k]) &#123;</span><br><span class="line">        <span class="comment">// @ts-expect-error</span></span><br><span class="line">        target[k] = origin[k] <span class="keyword">instanceof</span> <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">        deepcoyp(origin[k], target[k]);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        target[k] = origin[k];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> target;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="JS-高级"><a href="#JS-高级" class="headerlink" title="JS 高级"></a>JS 高级</h2><p><img src="http://static.sunday90.com/images/6288755792019456.jpeg" class="lazyload" data-srcset="http://static.sunday90.com/images/6288755792019456.jpeg" srcset="data:image/png;base64,666" alt="javascript"></p>
+<h2 id="JS-高级"><a href="#JS-高级" class="headerlink" title="JS 高级"></a>JS 高级</h2><p><img src="http://qiniu.daixiu8.cn/images/6288755792019456.jpeg" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/6288755792019456.jpeg" srcset="data:image/png;base64,666" alt="javascript"></p>
 <h3 id="prototype-和-proto-的区别"><a href="#prototype-和-proto-的区别" class="headerlink" title="prototype 和__proto__的区别"></a>prototype 和__proto__的区别</h3><ul>
 <li><p>prototype 是函数的属性 【原型】</p>
 </li>
@@ -529,7 +529,7 @@
 <li>在函数内部可以引用外部的参数和变量</li>
 <li>参数和变量不会以垃圾回收机制回收</li>
 </ul>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p><img src="http://static.sunday90.com/images/Banner-Blog-1A-1.jpg" class="lazyload" data-srcset="http://static.sunday90.com/images/Banner-Blog-1A-1.jpg" srcset="data:image/png;base64,666" alt="algorithm"></p>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p><img src="http://qiniu.daixiu8.cn/images/Banner-Blog-1A-1.jpg" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/Banner-Blog-1A-1.jpg" srcset="data:image/png;base64,666" alt="algorithm"></p>
 <h3 id="构建二叉树"><a href="#构建二叉树" class="headerlink" title="构建二叉树"></a>构建二叉树</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BinaryTree</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> root: <span class="literal">null</span> | Node = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="title">insert</span>(<span class="params">key: <span class="built_in">number</span></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> node = <span class="keyword">new</span> Node(key);</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">this</span>.root) &#123;</span><br><span class="line">      <span class="built_in">this</span>.insertNode(<span class="built_in">this</span>.root, node);</span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">this</span>.root = node;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="function"><span class="title">insertNode</span>(<span class="params">node: Node, newNode: Node</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 节点值 小于 根节点 插入左边  反之 插入右边</span></span><br><span class="line">    <span class="keyword">if</span> (newNode.key &lt; node.key) &#123;</span><br><span class="line">      <span class="comment">// 插入前 判断当前node 是否为空 是 生成节点 否则 继续 insertNode</span></span><br><span class="line">      <span class="keyword">if</span> (node.left === <span class="literal">null</span>) &#123;</span><br><span class="line">        node.left = newNode;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.insertNode(node.left, newNode);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (node.right === <span class="literal">null</span>) &#123;</span><br><span class="line">        node.right = newNode;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.insertNode(node.right, newNode);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="翻转二叉树"><a href="#翻转二叉树" class="headerlink" title="翻转二叉树"></a>翻转二叉树</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 翻转二叉树</span></span><br><span class="line"><span class="comment"> * 递归翻转</span></span><br><span class="line"><span class="comment"> * 先判断 节点是否为空</span></span><br><span class="line"><span class="comment"> * 首先 先 暂存 左右子节点</span></span><br><span class="line"><span class="comment"> * 赋值 左右右节点 = 暂存右左节点;</span></span><br><span class="line"><span class="comment"> * 递归 左右节点</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BinaryTree</span> </span>&#123;</span><br><span class="line">  <span class="comment">// more...</span></span><br><span class="line">  <span class="keyword">private</span> <span class="function"><span class="title">reverseNode</span>(<span class="params">node: Node | <span class="literal">null</span></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (!node) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> tempLeft = node.left;</span><br><span class="line">    <span class="keyword">const</span> tempRight = node.right;</span><br><span class="line"></span><br><span class="line">    node.right = tempLeft;</span><br><span class="line">    <span class="built_in">this</span>.reverseNode(node.right);</span><br><span class="line"></span><br><span class="line">    node.left = tempRight;</span><br><span class="line">    <span class="built_in">this</span>.reverseNode(node.left);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="function"><span class="title">reverse</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.reverseNode(<span class="built_in">this</span>.root);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -545,16 +545,16 @@
 <h3 id="JS-中的广度与深度优先遍历"><a href="#JS-中的广度与深度优先遍历" class="headerlink" title="JS 中的广度与深度优先遍历"></a>JS 中的广度与深度优先遍历</h3><blockquote>
 <p>深度优先</p>
 </blockquote>
-<p><img src="http://static.sunday90.com/images/20180705160341166.png" class="lazyload" data-srcset="http://static.sunday90.com/images/20180705160341166.png" srcset="data:image/png;base64,666" alt="deepTraversal"></p>
+<p><img src="http://qiniu.daixiu8.cn/images/20180705160341166.png" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/20180705160341166.png" srcset="data:image/png;base64,666" alt="deepTraversal"></p>
 <figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 深度遍历</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="variable">node</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">deepTraversal</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">Node</span>&gt;(<span class="params">node: T</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(node);</span><br><span class="line">  <span class="keyword">if</span> (node.childNodes) &#123;</span><br><span class="line">    <span class="built_in">Array</span>.prototype.forEach.call(node.childNodes, <span class="function">(<span class="params">item: T</span>) =&gt;</span> &#123;</span><br><span class="line">      deepTraversal(item);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>广度优先</p>
 </blockquote>
-<p><img src="http://static.sunday90.com/images/20180705155854774.png" class="lazyload" data-srcset="http://static.sunday90.com/images/20180705155854774.png" srcset="data:image/png;base64,666" alt="breadthTraversal"></p>
+<p><img src="http://qiniu.daixiu8.cn/images/20180705155854774.png" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/20180705155854774.png" srcset="data:image/png;base64,666" alt="breadthTraversal"></p>
 <figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 广度优先</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@export</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@template <span class="variable">T</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;T&#125;</span> <span class="variable">node</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">breadthTraversal</span>&lt;<span class="title">T</span> <span class="title">extends</span> <span class="title">Node</span>&gt;(<span class="params">node: T</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> queue: T[] = [];</span><br><span class="line">  queue.unshift(node);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (queue.length) &#123;</span><br><span class="line">    <span class="keyword">const</span> childrenItem = queue.pop()!;</span><br><span class="line">    <span class="built_in">console</span>.log(childrenItem);</span><br><span class="line">    <span class="keyword">const</span> childrenList: T[] = <span class="built_in">Array</span>.prototype.slice.call(childrenItem.childNodes, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; childrenList.length; i++) &#123;</span><br><span class="line">      queue.push(childrenList[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><p><img src="http://static.sunday90.com/images/QQ20200718-003403@2x.png" class="lazyload" data-srcset="http://static.sunday90.com/images/QQ20200718-003403@2x.png" srcset="data:image/png;base64,666" alt="webpack"></p>
+<h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><p><img src="http://qiniu.daixiu8.cn/images/QQ20200718-003403@2x.png" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/QQ20200718-003403@2x.png" srcset="data:image/png;base64,666" alt="webpack"></p>
 <h3 id="你都用过哪些webpack的配置"><a href="#你都用过哪些webpack的配置" class="headerlink" title="你都用过哪些webpack的配置"></a>你都用过哪些webpack的配置</h3><ul>
 <li><code>mode</code> 模式</li>
 <li><code>entry</code> 入口</li>
@@ -582,7 +582,7 @@
 <li>mini-css-extract-plugin 把css 输出成css 文件</li>
 <li>uglifyjs-webpack-plugin 把 压缩css / js 文件</li>
 </ul>
-<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p><img src="http://static.sunday90.com/images/http1.jpeg" class="lazyload" data-srcset="http://static.sunday90.com/images/http1.jpeg" srcset="data:image/png;base64,666" alt="http1"></p>
+<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p><img src="http://qiniu.daixiu8.cn/images/http1.jpeg" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/http1.jpeg" srcset="data:image/png;base64,666" alt="http1"></p>
 <h3 id="谈谈你对http协议的认识"><a href="#谈谈你对http协议的认识" class="headerlink" title="谈谈你对http协议的认识"></a>谈谈你对http协议的认识</h3><p>http协议是基于一种请求/响应模式的、无状态的、应用层的协议，基于TCP协议传输数据，支持客户/服务器模式，每次完整交互都包含HTTP请求和HTTP响应。</p>
 <p>Http请求由三个部分组成，请求行、消息报头、请求正文（可选，为空也行）</p>
 <p>请求方法主要包括：GET、POST、HEAD、PUT、DELETE… GET：请求获取Request-URI所标识的资源 POST：在Request-URI所标识的资源后附加新的数据（body）</p>
@@ -907,9 +907,9 @@
         <div class='donate'>
           <div class='imgs'>
             
-              <img src='http://static.sunday90.com/images/zhifubao.jpeg'>
+              <img src='http://qiniu.daixiu8.cn/images/zhifubao.jpeg'>
             
-              <img src='http://static.sunday90.com/images/weixin.jpeg'>
+              <img src='http://qiniu.daixiu8.cn/images/weixin.jpeg'>
             
           </div>
         </div>
@@ -924,10 +924,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-14T22:20:39+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-08-15T22:46:40+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年12月14日</p>
+    <p>更新于：2021年8月15日</p>
   </a>
 </div>
 
@@ -1338,7 +1338,7 @@ var loadCSS = function( href, before, media, attributes ){
 <script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
 
     <script type="text/javascript">
-        var imgs=["http://static.sunday90.com/images/pexels-photo-x20.jpg"];
+        var imgs=["http://qiniu.daixiu8.cn/images/pexels-photo-x20.jpg"];
         if ('true' == 'true') {
           function shuffle(arr){
             /*From countercurrent-time*/

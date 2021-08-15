@@ -38,7 +38,7 @@
 
   <!-- link -->
   
-    <link rel="shortcut icon" type='image/x-icon' href="http://static.sunday90.com/images/favicon-32x32.png">
+    <link rel="shortcut icon" type='image/x-icon' href="http://qiniu.daixiu8.cn/images/favicon-32x32.png">
   
 
   <!-- import link -->
@@ -79,7 +79,7 @@
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='http://static.sunday90.com/images/avatar@4x-100.jpg'/>
+            <img no-lazy class='logo' src='http://qiniu.daixiu8.cn/images/avatar@4x-100.jpg'/>
           
           
           
@@ -373,7 +373,7 @@
             
 <div class='new-meta-item author'>
   <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="http://static.sunday90.com/images/avatar.jpg">
+    <img no-lazy src="http://qiniu.daixiu8.cn/images/avatar.jpg">
     <p>sunday9787</p>
   </a>
 </div>
@@ -422,7 +422,7 @@
 
 <figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> TipsOptions &#123;</span><br><span class="line">  messages: <span class="built_in">string</span> | <span class="built_in">string</span>[];</span><br><span class="line">  className?: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">Tips</span> </span>&#123;</span><br><span class="line">  <span class="keyword">public</span> className?: <span class="built_in">string</span>;</span><br><span class="line">  <span class="keyword">public</span> messages: <span class="built_in">string</span>[];</span><br><span class="line">  <span class="keyword">public</span> count = <span class="number">0</span>;</span><br><span class="line">  <span class="function"><span class="title">constructor</span>(<span class="params">options: TipsOptions</span>)</span> &#123;</span><br><span class="line">    <span class="built_in">this</span>.messages = options.messages <span class="keyword">instanceof</span> <span class="built_in">Array</span> ? options.messages : [options.messages];</span><br><span class="line">    <span class="built_in">this</span>.className = options.className;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> render(): <span class="built_in">void</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> self = <span class="built_in">this</span>;</span><br><span class="line">    <span class="keyword">const</span> messageLength = <span class="built_in">this</span>.messages.length;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event: MouseEvent</span>) </span>&#123;</span><br><span class="line">      self.count++;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> el = <span class="built_in">this</span>.createElement(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line">      <span class="comment">// el.innerText = self.messages[self.count % messageLength];</span></span><br><span class="line">      el.innerText = self.messages[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * messageLength)];</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (self.className) &#123;</span><br><span class="line">        el.classList.add(self.className);</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      el.style.maxWidth = <span class="string">&#x27;60px&#x27;</span>;</span><br><span class="line">      el.style.color = <span class="string">&#x27;red&#x27;</span>;</span><br><span class="line">      el.style.cursor = <span class="string">&#x27;default&#x27;</span>;</span><br><span class="line">      el.style.userSelect = <span class="string">&#x27;none&#x27;</span>;</span><br><span class="line">      el.style.opacity = <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">      el.style.transitionDuration = <span class="string">&#x27;200ms&#x27;</span>;</span><br><span class="line">      el.style.position = <span class="string">&#x27;absolute&#x27;</span>;</span><br><span class="line">      el.style.top = event.pageY + <span class="string">&#x27;px&#x27;</span>;</span><br><span class="line"></span><br><span class="line">      <span class="built_in">this</span>.body.appendChild(el);</span><br><span class="line"></span><br><span class="line">      <span class="comment">/*</span></span><br><span class="line"><span class="comment">      * 水平 点击 位置居中</span></span><br><span class="line"><span class="comment">      * offsetWidth 必须要等元素插入dom中后才能获取到</span></span><br><span class="line"><span class="comment">      */</span></span><br><span class="line">      el.style.left = event.pageX - el.offsetWidth / <span class="number">2</span> + <span class="string">&#x27;px&#x27;</span>;</span><br><span class="line"></span><br><span class="line">      <span class="built_in">console</span>.log(event.pageX, el.style.left, el.offsetWidth, event.pageX - el.offsetWidth / <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 等待 前面执行栈执行完毕 立即插入任务队列</span></span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        el.style.opacity = <span class="string">&#x27;1&#x27;</span>;</span><br><span class="line">        <span class="comment">// 垂直浮动 最高 50px 距离</span></span><br><span class="line">        el.style.transform = <span class="string">`translateY(<span class="subst">$&#123;-<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">50</span>)&#125;</span>px)`</span>;</span><br><span class="line">      &#125;, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        el.style.opacity = <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        <span class="comment">// 过渡动画 是 200ms 故 延时200 移除dom</span></span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">          <span class="built_in">this</span>.body.removeChild(el);</span><br><span class="line">        &#125;, <span class="number">200</span>);</span><br><span class="line">      &#125;, <span class="number">3000</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>效果<br><img src="http://static.sunday90.com/images/20200705172533.gif" class="lazyload" data-srcset="http://static.sunday90.com/images/20200705172533.gif" srcset="data:image/png;base64,666" alt="效果"><br>完工</p>
+<p>效果<br><img src="http://qiniu.daixiu8.cn/images/20200705172533.gif" class="lazyload" data-srcset="http://qiniu.daixiu8.cn/images/20200705172533.gif" srcset="data:image/png;base64,666" alt="效果"><br>完工</p>
 
   
   
@@ -458,9 +458,9 @@
         <div class='donate'>
           <div class='imgs'>
             
-              <img src='http://static.sunday90.com/images/zhifubao.jpeg'>
+              <img src='http://qiniu.daixiu8.cn/images/zhifubao.jpeg'>
             
-              <img src='http://static.sunday90.com/images/weixin.jpeg'>
+              <img src='http://qiniu.daixiu8.cn/images/weixin.jpeg'>
             
           </div>
         </div>
@@ -475,10 +475,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-14T23:12:06+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-08-15T22:46:40+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年12月14日</p>
+    <p>更新于：2021年8月15日</p>
   </a>
 </div>
 
@@ -879,7 +879,7 @@ var loadCSS = function( href, before, media, attributes ){
 <script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
 
     <script type="text/javascript">
-        var imgs=["http://static.sunday90.com/images/pexels-photo-x20.jpg"];
+        var imgs=["http://qiniu.daixiu8.cn/images/pexels-photo-x20.jpg"];
         if ('true' == 'true') {
           function shuffle(arr){
             /*From countercurrent-time*/
